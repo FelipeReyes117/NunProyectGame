@@ -100,7 +100,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -247,7 +247,7 @@ TextureImporter:
         serializedVersion: 2
         x: 111
         y: 273
-        width: 97
+        width: 98
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -291,7 +291,7 @@ TextureImporter:
         serializedVersion: 2
         x: 111
         y: 241
-        width: 97
+        width: 98
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
