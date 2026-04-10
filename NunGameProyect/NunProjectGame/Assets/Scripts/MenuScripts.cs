@@ -1,21 +1,21 @@
 using UnityEngine;
-using UnityEngune.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class MenuScripts : MonoBehaviour
 {
     public GameObject OptionsMenu;
     public GameObject MainMenu;
     
-    public void OpenOptionsMenu()
+    public void OpenOptionsPanel()
     {
     	MainMenu.SetActive(false);
-    	OptionsMenu.setActive(true);
+    	OptionsMenu.SetActive(true);
     }
     
     public void OpenMainMenuPanel()
     {
     	MainMenu.SetActive(true);
-    	OptionsMenu(false);
+    	OptionsMenu.SetActive(false);
     }
     
     public void QuitGame()
@@ -25,8 +25,9 @@ public class MenuScripts : MonoBehaviour
     
     public void PlayGame()
     {
-    	//SceneManager.LoadScene("Level");
-    	Console.writeline("Se presionó el boton juga");
+    	//SceneManager.LoadScene("Level 1");
+        Debug.Log("Play Game");
+    	
     }
     
 }
