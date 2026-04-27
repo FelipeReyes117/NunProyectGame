@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5498d8d13fc1845ae344b99c5c5f9b, type: 3}
+  m_Name: Red_Cetro_Item
+  m_EditorClassIdentifier: Assembly-CSharp::weaponData
+  nombreArma: Escopeta
+  spriteArmas: {fileID: -4990152456489421206, guid: 2173abe1b73816d41a8caf994841481b, type: 3}
+  prefabBala: {fileID: 3852326591071803514, guid: 9a0e784c53816a945a8c0be8a5f4b9b7, type: 3}
+  cadenciaFuego: 1
+  numeroDeBalas: 3
+  dispersion: 15
+  esInfinita: 0

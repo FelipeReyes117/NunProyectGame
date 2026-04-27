@@ -2,7 +2,15 @@ using UnityEngine;
 
 public class VIda : MonoBehaviour
 {
+    [Header("Ajustes de Despawn")]
+    public float tiempoDeVida = 5f; // Variable cambiante desde el Inspector
 
+    void Start()
+    {
+        // Esto le dice a Unity: "Destruye este objeto cuando pasen X segundos"
+        // Se programa desde que el objeto nace (Start)
+        Destroy(gameObject, tiempoDeVida);
+    }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,16 +22,5 @@ public class VIda : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
