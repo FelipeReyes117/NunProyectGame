@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Red_Cetro_Item
   m_EditorClassIdentifier: Assembly-CSharp::weaponData
   nombreArma: Escopeta
-  spriteArmas: {fileID: -4990152456489421206, guid: 2173abe1b73816d41a8caf994841481b, type: 3}
+  spriteArmas: {fileID: 1319740719, guid: b7703716598992a4da6e3a38c2aff65f, type: 3}
   prefabBala: {fileID: 3852326591071803514, guid: 9a0e784c53816a945a8c0be8a5f4b9b7, type: 3}
   cadenciaFuego: 1
   numeroDeBalas: 3

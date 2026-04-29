@@ -16,6 +16,6 @@ MonoBehaviour:
   spriteArmas: {fileID: -4364847330023632865, guid: b7703716598992a4da6e3a38c2aff65f, type: 3}
   prefabBala: {fileID: 2141181071486411996, guid: 556cbfcc08e1c4948a14a60db5db82cd, type: 3}
   cadenciaFuego: 1
-  numeroDeBalas: 20
-  dispersion: 1
+  numeroDeBalas: 15
+  dispersion: 15
   esInfinita: 0
