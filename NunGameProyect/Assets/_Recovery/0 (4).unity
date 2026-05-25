@@ -7896,7 +7896,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.6313726, g: 0.8862745, b: 0.5568628, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -17, y: -18, z: 0}
   m_Size: {x: 35, y: 35, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -12745,7 +12745,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.6313726, g: 0.8862745, b: 0.5568628, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -12, y: -16, z: 0}
   m_Size: {x: 330, y: 317, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -12831,7 +12831,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.145
+  orthographic size: 1.05875
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
