@@ -10,14 +10,26 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Animator PlayerAnimator;
 
+    [Header("Da√±o recibido")]
+    public float knockbackDuration = 0.4f;
+    private bool isKnockedBack = false;
+    private float knockbackTimer = 0f;
+
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
-        PlayerAnimator = GetComponent<Animator>(); // Estaba mal escrito "GetComponet"
+        PlayerAnimator = GetComponent<Animator>();
     }
 
     void Update()
     {
+        if (isKnockedBack)
+        {
+            knockbackTimer -= Time.deltaTime;
+            if (knockbackTimer <= 0f) isKnockedBack = false;
+            return;
+        }
+
         moveInput = Keyboard.current != null
             ? new Vector2(
                 (Keyboard.current.dKey.isPressed ? 1 : 0) - (Keyboard.current.aKey.isPressed ? 1 : 0),
@@ -25,13 +37,25 @@ public class PlayerMovement : MonoBehaviour
               ).normalized
             : Vector2.zero;
 
-        PlayerAnimator.SetFloat("Horizontal", moveInput.x); // moveX no existÌa
-        PlayerAnimator.SetFloat("Vertical", moveInput.y);   // moveY no existÌa
+        PlayerAnimator.SetFloat("Horizontal", moveInput.x);
+        PlayerAnimator.SetFloat("Vertical", moveInput.y);
         PlayerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
     }
 
     private void FixedUpdate()
     {
+        if (isKnockedBack) return;
         playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
+    }
+
+    
+    public void TakeDamage(int damage, Vector2 knockbackForce)
+    {
+        for (int i = 0; i < damage; i++)
+            GameManager.instance.PerderVidas();
+
+        isKnockedBack = true;
+        knockbackTimer = knockbackDuration;
+        playerRb.linearVelocity = knockbackForce; // ‚Üê aplica el empuje directo
     }
 }
