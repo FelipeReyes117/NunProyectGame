@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 6406709998006994307}
   - component: {fileID: 8140004544290995606}
   - component: {fileID: 8492006171378266939}
-  - component: {fileID: 219012016855605438}
   - component: {fileID: 7713532188934891186}
+  - component: {fileID: 7059653731984159463}
+  - component: {fileID: -1603848466966945163}
+  - component: {fileID: -3796944377299769640}
   m_Layer: 0
   m_Name: Red_Little_Slime
   m_TagString: Enemy
@@ -168,25 +170,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.67771435, y: 0.6350589}
   m_EdgeRadius: 0
---- !u!114 &219012016855605438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7653349498137219061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 748b3a940c457d3478ebbf2661a5cb70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  Player: {fileID: 0}
-  detectionRadius: 15
-  Speed: 2.34
-  health: 2
-  knockbackForce: 200
-  lifePrefab: {fileID: 2606669791423484085, guid: 5b3ff949b1c8647469ad89c693705d40, type: 3}
-  dropChance: 32
 --- !u!95 &7713532188934891186
 Animator:
   serializedVersion: 7
@@ -209,3 +192,61 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7059653731984159463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653349498137219061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 748b3a940c457d3478ebbf2661a5cb70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  detectionRadius: 50
+  Speed: 2
+  health: 2
+  knockbackForce: 50
+  drops:
+  - nombre: Curacion
+    prefab: {fileID: 2606669791423484085, guid: 5b3ff949b1c8647469ad89c693705d40, type: 3}
+    chance: 33
+  - nombre: Arma roja
+    prefab: {fileID: 1360984394190949110, guid: 80ee81de641041b4b826de28e2704748, type: 3}
+    chance: 33
+  - nombre: biblia
+    prefab: {fileID: 3271211389191823237, guid: c22d05d22863c474a904de4c4790f65d, type: 3}
+    chance: 33
+--- !u!114 &-1603848466966945163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653349498137219061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f5a52c10d3b3983a9ebd6581f220fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeleeAttack
+  attackRange: 2
+  attackCooldown: 1
+  damage: 1
+  knockbackForce: 5
+--- !u!114 &-3796944377299769640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653349498137219061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f5a52c10d3b3983a9ebd6581f220fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeleeAttack
+  attackRange: 2
+  attackCooldown: 2
+  damage: 1
+  knockbackForce: 10
