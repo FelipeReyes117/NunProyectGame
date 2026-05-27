@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: b21c46bab172398b6b8d715e84c79aae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7800857605875340357
+    second: "Animaci\xF3n_Derecha_Abajo_0"
+  - first:
+      213: 6653821253350639954
+    second: "Animaci\xF3n_Derecha_Abajo_1"
+  - first:
+      213: 7621527182041934096
+    second: "Animaci\xF3n_Derecha_Abajo_2"
+  - first:
+      213: -2663768600753879499
+    second: "Animaci\xF3n_Derecha_Abajo_3"
+  - first:
+      213: -4969105580791402244
+    second: "Animaci\xF3n_Derecha_Abajo_4"
+  - first:
+      213: -123951129260701491
+    second: "Animaci\xF3n_Derecha_Abajo_5"
+  - first:
+      213: 2761975462142617795
+    second: "Animaci\xF3n_Derecha_Abajo_6"
+  - first:
+      213: 1430967203783718722
+    second: "Animaci\xF3n_Derecha_Abajo_7"
+  - first:
+      213: 7465705642785824131
+    second: "Animaci\xF3n_Derecha_Abajo_8"
+  - first:
+      213: -797322371188774250
+    second: "Animaci\xF3n_Derecha_Abajo_9"
+  - first:
+      213: 7619870855770992647
+    second: "Animaci\xF3n_Derecha_Abajo_10"
+  - first:
+      213: 8507442752958584282
+    second: "Animaci\xF3n_Derecha_Abajo_11"
+  - first:
+      213: -4808793763325465293
+    second: "Animaci\xF3n_Derecha_Abajo_12"
+  - first:
+      213: -6096813692845877969
+    second: "Animaci\xF3n_Derecha_Abajo_13"
+  - first:
+      213: 246085388768745572
+    second: "Animaci\xF3n_Derecha_Abajo_14"
+  - first:
+      213: 1159674624392404010
+    second: "Animaci\xF3n_Derecha_Abajo_15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_0"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5449a9d69a6324c60800000000000000
+      internalID: 7800857605875340357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_1"
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 2
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259c8ec2d2f175c50800000000000000
+      internalID: 6653821253350639954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_2"
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019e79b679a15c960800000000000000
+      internalID: 7621527182041934096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_3"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536c9342294680bd0800000000000000
+      internalID: -2663768600753879499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_4"
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 2
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0748d3dc03a0bb0800000000000000
+      internalID: -4969105580791402244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_5"
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc848eaca13a74ef0800000000000000
+      internalID: -123951129260701491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_6"
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 2
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c82b5b9c02845620800000000000000
+      internalID: 2761975462142617795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_7"
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 2
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24733ca1711dbd310800000000000000
+      internalID: 1430967203783718722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_8"
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 2
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dd0e32ab38b9760800000000000000
+      internalID: 7465705642785824131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_9"
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 2
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a22dd17875fe4f0800000000000000
+      internalID: -797322371188774250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_10"
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 2
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700f498eb283fb960800000000000000
+      internalID: 7619870855770992647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_11"
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 2
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad551150c12801670800000000000000
+      internalID: 8507442752958584282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_12"
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 2
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d2fd2ec8bb34db0800000000000000
+      internalID: -4808793763325465293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_13"
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 2
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f251f28af34c36ba0800000000000000
+      internalID: -6096813692845877969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_14"
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 2
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46899f57b554a6300800000000000000
+      internalID: 246085388768745572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Derecha_Abajo_15"
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c91f93dedf71010800000000000000
+      internalID: 1159674624392404010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Animaci\xF3n_Derecha_Abajo_0": 7800857605875340357
+      "Animaci\xF3n_Derecha_Abajo_1": 6653821253350639954
+      "Animaci\xF3n_Derecha_Abajo_10": 7619870855770992647
+      "Animaci\xF3n_Derecha_Abajo_11": 8507442752958584282
+      "Animaci\xF3n_Derecha_Abajo_12": -4808793763325465293
+      "Animaci\xF3n_Derecha_Abajo_13": -6096813692845877969
+      "Animaci\xF3n_Derecha_Abajo_14": 246085388768745572
+      "Animaci\xF3n_Derecha_Abajo_15": 1159674624392404010
+      "Animaci\xF3n_Derecha_Abajo_2": 7621527182041934096
+      "Animaci\xF3n_Derecha_Abajo_3": -2663768600753879499
+      "Animaci\xF3n_Derecha_Abajo_4": -4969105580791402244
+      "Animaci\xF3n_Derecha_Abajo_5": -123951129260701491
+      "Animaci\xF3n_Derecha_Abajo_6": 2761975462142617795
+      "Animaci\xF3n_Derecha_Abajo_7": 1430967203783718722
+      "Animaci\xF3n_Derecha_Abajo_8": 7465705642785824131
+      "Animaci\xF3n_Derecha_Abajo_9": -797322371188774250
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

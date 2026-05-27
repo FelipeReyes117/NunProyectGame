@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5498d8d13fc1845ae344b99c5c5f9b, type: 3}
+  m_Name: Cetro_Infinite
+  m_EditorClassIdentifier: Assembly-CSharp::weaponData
+  nombreArma: Cetro_Defaul
+  spriteArmas: {fileID: -1366827303, guid: b7703716598992a4da6e3a38c2aff65f, type: 3}
+  prefabBala: {fileID: 6242942789363214000, guid: 414ea512024e0df41834062a765463c6, type: 3}
+  cadenciaFuego: 0.5
+  numeroDeBalas: 1
+  dispersion: 0
+  esInfinita: 1
