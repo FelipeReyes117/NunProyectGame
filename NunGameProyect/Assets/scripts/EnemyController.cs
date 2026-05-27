@@ -1,11 +1,18 @@
 using UnityEngine;
-using System.Collections; 
+using System.Collections;
 
-public class EnemyController : MonoBehaviour 
+public class EnemyController : MonoBehaviour
 {
-   
-    private Transform player;
+    // ── Tipo de enemigo ───────────────────────────────────────────
+    public enum EnemyType { Melee, Ranged }
 
+    [Header("Comportamiento")]
+    public EnemyType enemyType = EnemyType.Melee;
+    public float preferredDistance = 4f;  // distancia que mantiene el enemigo Ranged
+    public float distanceTolerance = 0.5f; // margen antes de moverse
+    // ─────────────────────────────────────────────────────────────
+
+    private Transform player;
     public float detectionRadius = 7.0f;
     public float Speed = 2.0f;
 
@@ -13,19 +20,17 @@ public class EnemyController : MonoBehaviour
     public int health = 2;
     public float knockbackForce = 10f;
 
-    // ── Sistema de drops ──────────────────────────────────────────
     [System.Serializable]
     public class DropEntry
     {
-        public string nombre;           
+        public string nombre;
         public GameObject prefab;
         [Range(0, 100)]
-        public float chance;            
+        public float chance;
     }
 
     [Header("Drops (Recompensas)")]
-    public DropEntry[] drops;           
-    // ─────────────────────────────────────────────────────────────
+    public DropEntry[] drops;
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -36,7 +41,6 @@ public class EnemyController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        // Auto-detección del Player por Tag
         GameObject playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
             player = playerObj.transform;
@@ -46,7 +50,7 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        if (player == null) return; // Seguridad por si no se encontró el player
+        if (player == null) return;
 
         if (isKnockedBack)
         {
@@ -59,8 +63,16 @@ public class EnemyController : MonoBehaviour
 
         if (distanceToPlayer < detectionRadius)
         {
-            Vector2 direction = (player.position - transform.position).normalized;
-            movement = direction;
+            switch (enemyType)
+            {
+                case EnemyType.Melee:
+                    MoveMelee(distanceToPlayer);
+                    break;
+
+                case EnemyType.Ranged:
+                    MoveRanged(distanceToPlayer);
+                    break;
+            }
         }
         else
         {
@@ -68,6 +80,35 @@ public class EnemyController : MonoBehaviour
         }
 
         rb.linearVelocity = movement * Speed;
+    }
+
+    // ── Melee: persigue directo al player ────────────────────────
+    private void MoveMelee(float distanceToPlayer)
+    {
+        Vector2 direction = (player.position - transform.position).normalized;
+        movement = direction;
+    }
+
+    // ── Ranged: mantiene distancia preferida ─────────────────────
+    private void MoveRanged(float distanceToPlayer)
+    {
+        Vector2 direction = (player.position - transform.position).normalized;
+
+        if (distanceToPlayer > preferredDistance + distanceTolerance)
+        {
+            // Demasiado lejos → se acerca
+            movement = direction;
+        }
+        else if (distanceToPlayer < preferredDistance - distanceTolerance)
+        {
+            // Demasiado cerca → se aleja
+            movement = -direction;
+        }
+        else
+        {
+            // En la zona correcta → se queda quieto y dispara
+            movement = Vector2.zero;
+        }
     }
 
     public void TakeDamage(int damage, Vector2 knockbackDirection)
@@ -90,7 +131,6 @@ public class EnemyController : MonoBehaviour
 
     private void TryDrop()
     {
-      
         foreach (DropEntry drop in drops)
         {
             if (drop.prefab == null) continue;
@@ -99,7 +139,7 @@ public class EnemyController : MonoBehaviour
             if (roll <= drop.chance)
             {
                 Instantiate(drop.prefab, transform.position, Quaternion.identity);
-                return; // Solo un drop por muerte
+                return;
             }
         }
     }
@@ -107,8 +147,6 @@ public class EnemyController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
-        {
             GameManager.instance.PerderVidas();
-        }
     }
 }

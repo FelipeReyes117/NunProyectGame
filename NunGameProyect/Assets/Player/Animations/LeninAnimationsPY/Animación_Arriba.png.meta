@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 6b5b1f4d2fcd6c4f09499273b3b40880
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4499734818209351013
+    second: "Animaci\xF3n_Arriba_0"
+  - first:
+      213: 8144406597076553133
+    second: "Animaci\xF3n_Arriba_1"
+  - first:
+      213: 7902730874027547606
+    second: "Animaci\xF3n_Arriba_2"
+  - first:
+      213: 5249538339223247261
+    second: "Animaci\xF3n_Arriba_3"
+  - first:
+      213: 4556747826694522614
+    second: "Animaci\xF3n_Arriba_4"
+  - first:
+      213: 4732873738330592920
+    second: "Animaci\xF3n_Arriba_5"
+  - first:
+      213: 2734702422943427409
+    second: "Animaci\xF3n_Arriba_6"
+  - first:
+      213: 225223993531366805
+    second: "Animaci\xF3n_Arriba_7"
+  - first:
+      213: -3453198153502926082
+    second: "Animaci\xF3n_Arriba_8"
+  - first:
+      213: 2563315970031197156
+    second: "Animaci\xF3n_Arriba_9"
+  - first:
+      213: -150266276258611845
+    second: "Animaci\xF3n_Arriba_10"
+  - first:
+      213: -6085182944415774312
+    second: "Animaci\xF3n_Arriba_11"
+  - first:
+      213: -7552121194091218593
+    second: "Animaci\xF3n_Arriba_12"
+  - first:
+      213: 7204598090726396358
+    second: "Animaci\xF3n_Arriba_13"
+  - first:
+      213: -6324698004379862784
+    second: "Animaci\xF3n_Arriba_14"
+  - first:
+      213: -4703522131336063364
+    second: "Animaci\xF3n_Arriba_15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_0"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56543def9f4427e30800000000000000
+      internalID: 4499734818209351013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_1"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 3
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad881d26aeb60170800000000000000
+      internalID: 8144406597076553133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_2"
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 3
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db9ce50cd32cad60800000000000000
+      internalID: 7902730874027547606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_3"
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 3
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9912386e4b1ad840800000000000000
+      internalID: 5249538339223247261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_4"
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f609257102dc3f30800000000000000
+      internalID: 4556747826694522614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_5"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 3
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89658f3d69b8ea140800000000000000
+      internalID: 4732873738330592920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_6"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b61f55d5d93f520800000000000000
+      internalID: 2734702422943427409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_7"
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59df4516708202300800000000000000
+      internalID: 225223993531366805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_8"
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 3
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa5c614396c310d0800000000000000
+      internalID: -3453198153502926082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_9"
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 3
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb9bc03b4ab29320800000000000000
+      internalID: 2563315970031197156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_10"
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 3
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d72ed2e952aedf0800000000000000
+      internalID: -150266276258611845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_11"
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 3
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89905dc4a561d8ba0800000000000000
+      internalID: -6085182944415774312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_12"
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 3
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f597e7d69c9713790800000000000000
+      internalID: -7552121194091218593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_13"
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 3
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1543bbacfdbf360800000000000000
+      internalID: 7204598090726396358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_14"
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 3
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009f059bca82a38a0800000000000000
+      internalID: -6324698004379862784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Arriba_15"
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 3
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c769688ba8bb9beb0800000000000000
+      internalID: -4703522131336063364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Animaci\xF3n_Arriba_0": 4499734818209351013
+      "Animaci\xF3n_Arriba_1": 8144406597076553133
+      "Animaci\xF3n_Arriba_10": -150266276258611845
+      "Animaci\xF3n_Arriba_11": -6085182944415774312
+      "Animaci\xF3n_Arriba_12": -7552121194091218593
+      "Animaci\xF3n_Arriba_13": 7204598090726396358
+      "Animaci\xF3n_Arriba_14": -6324698004379862784
+      "Animaci\xF3n_Arriba_15": -4703522131336063364
+      "Animaci\xF3n_Arriba_2": 7902730874027547606
+      "Animaci\xF3n_Arriba_3": 5249538339223247261
+      "Animaci\xF3n_Arriba_4": 4556747826694522614
+      "Animaci\xF3n_Arriba_5": 4732873738330592920
+      "Animaci\xF3n_Arriba_6": 2734702422943427409
+      "Animaci\xF3n_Arriba_7": 225223993531366805
+      "Animaci\xF3n_Arriba_8": -3453198153502926082
+      "Animaci\xF3n_Arriba_9": 2563315970031197156
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
