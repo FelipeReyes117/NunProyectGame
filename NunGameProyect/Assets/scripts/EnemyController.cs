@@ -3,14 +3,12 @@ using System.Collections;
 
 public class EnemyController : MonoBehaviour
 {
-    // ── Tipo de enemigo ───────────────────────────────────────────
     public enum EnemyType { Melee, Ranged }
 
     [Header("Comportamiento")]
     public EnemyType enemyType = EnemyType.Melee;
-    public float preferredDistance = 4f;  // distancia que mantiene el enemigo Ranged
-    public float distanceTolerance = 0.5f; // margen antes de moverse
-    // ─────────────────────────────────────────────────────────────
+    public float preferredDistance = 4f;
+    public float distanceTolerance = 0.5f;
 
     private Transform player;
     public float detectionRadius = 7.0f;
@@ -32,6 +30,13 @@ public class EnemyController : MonoBehaviour
     [Header("Drops (Recompensas)")]
     public DropEntry[] drops;
 
+    // ── Partículas ────────────────────────────────────────────────
+    [Header("Partículas")]
+    public GameObject spawnParticle;
+    public GameObject hitParticle;
+    public GameObject deathParticle;
+    // ─────────────────────────────────────────────────────────────
+
     private Rigidbody2D rb;
     private Vector2 movement;
     private bool isKnockedBack;
@@ -46,6 +51,9 @@ public class EnemyController : MonoBehaviour
             player = playerObj.transform;
         else
             Debug.LogWarning($"[{gameObject.name}] No se encontró un objeto con Tag 'Player'.");
+
+        // ✅ Partícula de spawn
+        SpawnParticle(spawnParticle);
     }
 
     void Update()
@@ -65,13 +73,8 @@ public class EnemyController : MonoBehaviour
         {
             switch (enemyType)
             {
-                case EnemyType.Melee:
-                    MoveMelee(distanceToPlayer);
-                    break;
-
-                case EnemyType.Ranged:
-                    MoveRanged(distanceToPlayer);
-                    break;
+                case EnemyType.Melee:  MoveMelee(distanceToPlayer);  break;
+                case EnemyType.Ranged: MoveRanged(distanceToPlayer); break;
             }
         }
         else
@@ -82,33 +85,21 @@ public class EnemyController : MonoBehaviour
         rb.linearVelocity = movement * Speed;
     }
 
-    // ── Melee: persigue directo al player ────────────────────────
     private void MoveMelee(float distanceToPlayer)
     {
-        Vector2 direction = (player.position - transform.position).normalized;
-        movement = direction;
+        movement = (player.position - transform.position).normalized;
     }
 
-    // ── Ranged: mantiene distancia preferida ─────────────────────
     private void MoveRanged(float distanceToPlayer)
     {
         Vector2 direction = (player.position - transform.position).normalized;
 
         if (distanceToPlayer > preferredDistance + distanceTolerance)
-        {
-            // Demasiado lejos → se acerca
             movement = direction;
-        }
         else if (distanceToPlayer < preferredDistance - distanceTolerance)
-        {
-            // Demasiado cerca → se aleja
             movement = -direction;
-        }
         else
-        {
-            // En la zona correcta → se queda quieto y dispara
             movement = Vector2.zero;
-        }
     }
 
     public void TakeDamage(int damage, Vector2 knockbackDirection)
@@ -116,6 +107,9 @@ public class EnemyController : MonoBehaviour
         health -= damage;
         isKnockedBack = true;
         knockbackTimer = 0.2f;
+
+        
+        SpawnParticle(hitParticle);
 
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
@@ -125,6 +119,8 @@ public class EnemyController : MonoBehaviour
 
     private void Die()
     {
+        
+        SpawnParticle(deathParticle);
         TryDrop();
         Destroy(gameObject);
     }
@@ -134,7 +130,6 @@ public class EnemyController : MonoBehaviour
         foreach (DropEntry drop in drops)
         {
             if (drop.prefab == null) continue;
-
             float roll = Random.Range(0f, 100f);
             if (roll <= drop.chance)
             {
@@ -142,6 +137,13 @@ public class EnemyController : MonoBehaviour
                 return;
             }
         }
+    }
+
+    
+    private void SpawnParticle(GameObject particlePrefab)
+    {
+        if (particlePrefab == null) return;
+        Instantiate(particlePrefab, transform.position, Quaternion.identity);
     }
 
     private void OnCollisionEnter2D(Collision2D other)

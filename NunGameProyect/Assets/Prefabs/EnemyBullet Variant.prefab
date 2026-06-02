@@ -10,27 +10,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5958011336137054721, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.03
+      value: 3.3352
       objectReference: {fileID: 0}
     - target: {fileID: 5958011336137054721, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.030171193
+      value: 3.3542325
       objectReference: {fileID: 0}
     - target: {fileID: 5958011336137054721, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.030171193
+      value: 3.3542325
       objectReference: {fileID: 0}
     - target: {fileID: 5958011336137054721, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.06
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5958011336137054721, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.93
+      value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: 5958011336137054721, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5958011336137054721, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -70,16 +70,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839017128342540838, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_Size.x
-      value: 10.93
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8839017128342540838, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_Size.y
-      value: 9.82
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 9074625794042316518, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5365526514849123795, guid: b7703716598992a4da6e3a38c2aff65f, type: 3}
+    - target: {fileID: 9074625794042316518, guid: 414ea512024e0df41834062a765463c6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -4298384218430270967, guid: 414ea512024e0df41834062a765463c6, type: 3}
     m_RemovedGameObjects: []
@@ -106,5 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b374ea9e06a4e74ba0282266b700f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletEnemyScript
-  speed: 5
-  damage: 1
+  speed: 2
+  damage: 0

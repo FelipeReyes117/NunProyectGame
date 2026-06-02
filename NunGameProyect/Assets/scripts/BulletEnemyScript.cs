@@ -6,14 +6,15 @@ public class BulletEnemyScript : MonoBehaviour
     public float speed = 3f;
     public int damage = 1;
 
-    void Start()
+    private Collider2D bulletCollider;
+
+    void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        bulletCollider = GetComponent<Collider2D>();
 
-        // Ignora colisión con todos los enemigos para que no se choquen entre sí
+        // Ignora colisión con todos los enemigos
         EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
-        Collider2D bulletCollider = GetComponent<Collider2D>();
-
         foreach (EnemyController enemy in enemies)
         {
             Collider2D enemyCollider = enemy.GetComponent<Collider2D>();
@@ -22,26 +23,30 @@ public class BulletEnemyScript : MonoBehaviour
         }
     }
 
+    // ✅ Método para ignorar al enemigo que disparó
+    public void SetOwner(Collider2D ownerCollider)
+    {
+        if (bulletCollider != null && ownerCollider != null)
+            Physics2D.IgnoreCollision(bulletCollider, ownerCollider);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             PlayerMovement player = collision.GetComponent<PlayerMovement>();
-
             if (player != null)
             {
-                // Knockback en la misma dirección que va la bala
                 Vector2 knockDir = transform.right;
                 player.TakeDamage(damage, knockDir * 5f);
             }
-
             Destroy(gameObject);
         }
-        // Se destruye con paredes u otros objetos que no sean enemigos ni la bala misma
-        else if (!collision.CompareTag("Enemy") && 
-                 !collision.CompareTag("Bullet") && 
-                 !collision.CompareTag("Gun") && 
-                 !collision.CompareTag("heard"))
+        else if (!collision.CompareTag("Enemy") &&
+                 !collision.CompareTag("Bullet") &&
+                 !collision.CompareTag("Gun") &&
+                 !collision.CompareTag("heard") &&
+                 !collision.CompareTag("CameraBounds"))
         {
             Destroy(gameObject);
         }

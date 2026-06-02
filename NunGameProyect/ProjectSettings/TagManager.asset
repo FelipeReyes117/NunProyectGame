@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Gun
   - heard
+  - CameraBounds
   layers:
   - Default
   - TransparentFX

@@ -122,6 +122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748b3a940c457d3478ebbf2661a5cb70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  enemyType: 0
+  preferredDistance: 4
+  distanceTolerance: 0.5
   detectionRadius: 7
   Speed: 2
   health: 4
@@ -130,3 +133,6 @@ MonoBehaviour:
   - nombre: 
     prefab: {fileID: 1360984394190949110, guid: 80ee81de641041b4b826de28e2704748, type: 3}
     chance: 100
+  spawnParticle: {fileID: 1910609779370373796, guid: 5f517dfd95f6109bbb228cd3d6b01f1a, type: 3}
+  hitParticle: {fileID: 1428684042761380976, guid: c2e60c2d7022edde6ab1d4d05acc58d1, type: 3}
+  deathParticle: {fileID: 1836727825205733476, guid: 4e12dfc0ce0c9eb9ebc0cdfbea0b98f1, type: 3}

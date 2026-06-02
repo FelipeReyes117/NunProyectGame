@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: damage
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -4298384218430270967, guid: 414ea512024e0df41834062a765463c6, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 7721227218509701710, guid: fb81e84aa2dd2f0199a04753800fc591, type: 3}
     - target: {fileID: 5958011336137054721, guid: 414ea512024e0df41834062a765463c6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.68887377
