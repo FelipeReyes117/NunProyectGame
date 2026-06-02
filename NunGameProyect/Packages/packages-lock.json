@@ -146,6 +146,13 @@
         "com.unity.test-framework.performance": "3.0.3"
       }
     },
+    "com.unity.device-simulator.devices": {
+      "version": "1.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ext.nunit": {
       "version": "2.0.5",
       "depth": 1,
@@ -277,7 +284,7 @@
       }
     },
     "com.unity.test-framework.performance": {
-      "version": "3.3.0",
+      "version": "3.2.0",
       "depth": 2,
       "source": "registry",
       "dependencies": {
