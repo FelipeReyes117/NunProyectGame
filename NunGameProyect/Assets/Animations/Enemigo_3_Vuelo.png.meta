@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 776d7a6e79ff8bc109065c3a820540b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9205694716787213018
+    second: Enemigo_3_Vuelo_0
+  - first:
+      213: -8886600763392070234
+    second: Enemigo_3_Vuelo_1
+  - first:
+      213: 8104484787627366950
+    second: Enemigo_3_Vuelo_2
+  - first:
+      213: 2006232980932615763
+    second: Enemigo_3_Vuelo_3
+  - first:
+      213: 5721139676374891010
+    second: Enemigo_3_Vuelo_4
+  - first:
+      213: -4490871236661256363
+    second: Enemigo_3_Vuelo_5
+  - first:
+      213: 5308688250679863191
+    second: Enemigo_3_Vuelo_6
+  - first:
+      213: 3736590532664095324
+    second: Enemigo_3_Vuelo_7
+  - first:
+      213: -2708657199384508074
+    second: Enemigo_3_Vuelo_8
+  - first:
+      213: 3438474331770112396
+    second: Enemigo_3_Vuelo_9
+  - first:
+      213: 1468501087783045544
+    second: Enemigo_3_Vuelo_10
+  - first:
+      213: -7144933552002515847
+    second: Enemigo_3_Vuelo_11
+  - first:
+      213: -6320933600732862447
+    second: Enemigo_3_Vuelo_12
+  - first:
+      213: -3208282735743927250
+    second: Enemigo_3_Vuelo_13
+  - first:
+      213: -1994254170292617843
+    second: Enemigo_3_Vuelo_14
+  - first:
+      213: 7477850220428090631
+    second: Enemigo_3_Vuelo_15
+  - first:
+      213: -3218297198179453278
+    second: Enemigo_3_Vuelo_16
+  - first:
+      213: -4391009254616842283
+    second: Enemigo_3_Vuelo_17
+  - first:
+      213: -4733799980617888224
+    second: Enemigo_3_Vuelo_18
+  - first:
+      213: 3051101372242686048
+    second: Enemigo_3_Vuelo_19
+  - first:
+      213: 2022908166038384769
+    second: Enemigo_3_Vuelo_20
+  - first:
+      213: 2906042805158462874
+    second: Enemigo_3_Vuelo_21
+  - first:
+      213: 2006065482106197508
+    second: Enemigo_3_Vuelo_22
+  - first:
+      213: 2232178650942936713
+    second: Enemigo_3_Vuelo_23
+  - first:
+      213: -1948594147452680302
+    second: Enemigo_3_Vuelo_24
+  - first:
+      213: 9065910134400959476
+    second: Enemigo_3_Vuelo_25
+  - first:
+      213: 4014677666173298397
+    second: Enemigo_3_Vuelo_26
+  - first:
+      213: 7032969447446318634
+    second: Enemigo_3_Vuelo_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 19
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d353fcd6dce3080800000000000000
+      internalID: -9205694716787213018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 19
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6adec4d50b37ca480800000000000000
+      internalID: -8886600763392070234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 19
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a161699f9e87070800000000000000
+      internalID: 8104484787627366950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 19
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e5925444297db10800000000000000
+      internalID: 2006232980932615763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 19
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20af7b84932956f40800000000000000
+      internalID: 5721139676374891010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 19
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f59c667683da1c0800000000000000
+      internalID: -4490871236661256363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 19
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797201d56df3ca940800000000000000
+      internalID: 5308688250679863191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 19
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52f78aca490bd330800000000000000
+      internalID: 3736590532664095324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_8
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 19
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659c164d0aae86ad0800000000000000
+      internalID: -2708657199384508074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_9
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 19
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89c47adf2ae7bf20800000000000000
+      internalID: 3438474331770112396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_10
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 20
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9459975f9216410800000000000000
+      internalID: 1468501087783045544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_11
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 21
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97cbe193ac818dc90800000000000000
+      internalID: -7144933552002515847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_12
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 20
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118ac7f31688748a0800000000000000
+      internalID: -6320933600732862447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_13
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 19
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cf6fc99d3e973d0800000000000000
+      internalID: -3208282735743927250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_14
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 19
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8dfddbe56cf254e0800000000000000
+      internalID: -1994254170292617843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_15
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 19
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d5138f729a6c760800000000000000
+      internalID: 7477850220428090631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_16
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 19
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6f0e0efbf4653d0800000000000000
+      internalID: -3218297198179453278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_17
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 19
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df3c15f8500013c0800000000000000
+      internalID: -4391009254616842283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_18
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 19
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e05859ff92e4eb0800000000000000
+      internalID: -4733799980617888224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_19
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 19
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0607b3a5880b75a20800000000000000
+      internalID: 3051101372242686048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_20
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 19
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18074f95240d21c10800000000000000
+      internalID: 2022908166038384769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_21
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 19
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95cc8fc886545820800000000000000
+      internalID: 2906042805158462874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_22
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 19
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406dc196de9f6db10800000000000000
+      internalID: 2006065482106197508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_23
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 19
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9861aac08aa4afe10800000000000000
+      internalID: 2232178650942936713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_24
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 20
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2978dad62f335f4e0800000000000000
+      internalID: -1948594147452680302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_25
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 21
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f34596eb3590dd70800000000000000
+      internalID: 9065910134400959476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_26
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 20
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd624f3111007b730800000000000000
+      internalID: 4014677666173298397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo_3_Vuelo_27
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 19
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e863f33702a9160800000000000000
+      internalID: 7032969447446318634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Enemigo_3_Vuelo_0: -9205694716787213018
+      Enemigo_3_Vuelo_1: -8886600763392070234
+      Enemigo_3_Vuelo_10: 1468501087783045544
+      Enemigo_3_Vuelo_11: -7144933552002515847
+      Enemigo_3_Vuelo_12: -6320933600732862447
+      Enemigo_3_Vuelo_13: -3208282735743927250
+      Enemigo_3_Vuelo_14: -1994254170292617843
+      Enemigo_3_Vuelo_15: 7477850220428090631
+      Enemigo_3_Vuelo_16: -3218297198179453278
+      Enemigo_3_Vuelo_17: -4391009254616842283
+      Enemigo_3_Vuelo_18: -4733799980617888224
+      Enemigo_3_Vuelo_19: 3051101372242686048
+      Enemigo_3_Vuelo_2: 8104484787627366950
+      Enemigo_3_Vuelo_20: 2022908166038384769
+      Enemigo_3_Vuelo_21: 2906042805158462874
+      Enemigo_3_Vuelo_22: 2006065482106197508
+      Enemigo_3_Vuelo_23: 2232178650942936713
+      Enemigo_3_Vuelo_24: -1948594147452680302
+      Enemigo_3_Vuelo_25: 9065910134400959476
+      Enemigo_3_Vuelo_26: 4014677666173298397
+      Enemigo_3_Vuelo_27: 7032969447446318634
+      Enemigo_3_Vuelo_3: 2006232980932615763
+      Enemigo_3_Vuelo_4: 5721139676374891010
+      Enemigo_3_Vuelo_5: -4490871236661256363
+      Enemigo_3_Vuelo_6: 5308688250679863191
+      Enemigo_3_Vuelo_7: 3736590532664095324
+      Enemigo_3_Vuelo_8: -2708657199384508074
+      Enemigo_3_Vuelo_9: 3438474331770112396
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

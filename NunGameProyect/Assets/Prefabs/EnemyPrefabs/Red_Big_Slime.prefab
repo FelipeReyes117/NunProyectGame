@@ -38,11 +38,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.4665
+      value: 10.90456
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9381
+      value: -2.9138772
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalPosition.z
@@ -104,6 +104,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7653349498137219061, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4377429330143525605}
+    - targetCorrespondingSourceObject: {fileID: 7653349498137219061, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8763200317727424330}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
 --- !u!1 &1054922022966388230 stripped
 GameObject:
@@ -126,13 +129,30 @@ MonoBehaviour:
   preferredDistance: 4
   distanceTolerance: 0.5
   detectionRadius: 7
-  Speed: 2
-  health: 4
+  Speed: 1
+  health: 5
   knockbackForce: 25
   drops:
-  - nombre: 
+  - nombre: BastonROjo
     prefab: {fileID: 1360984394190949110, guid: 80ee81de641041b4b826de28e2704748, type: 3}
     chance: 100
   spawnParticle: {fileID: 1910609779370373796, guid: 5f517dfd95f6109bbb228cd3d6b01f1a, type: 3}
   hitParticle: {fileID: 1428684042761380976, guid: c2e60c2d7022edde6ab1d4d05acc58d1, type: 3}
   deathParticle: {fileID: 1836727825205733476, guid: 4e12dfc0ce0c9eb9ebc0cdfbea0b98f1, type: 3}
+--- !u!114 &8763200317727424330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054922022966388230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc6ebc580a9d2124a03286f3a27b300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChargeAttack
+  attackRange: 3
+  attackCooldown: 1
+  chargeSpeed: 10
+  chargeDuration: 0.4
+  damage: 1

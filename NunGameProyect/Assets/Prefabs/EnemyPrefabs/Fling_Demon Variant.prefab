@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f843317463f13676b523cb9b2e0a0cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangedAttack
-  attackRange: 10
+  attackRange: 5
   attackCooldown: 4
   projectilePrefab: {fileID: 7315931486378317397, guid: 9138575cf539bc45ca937e3e075846d7, type: 3}
   projectileSpeed: 5

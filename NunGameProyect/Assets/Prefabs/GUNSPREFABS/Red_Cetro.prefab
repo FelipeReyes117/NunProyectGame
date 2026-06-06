@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7657849524931908501}
   m_Layer: 0
   m_Name: Red_Cetro
-  m_TagString: Untagged
+  m_TagString: Items
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16, y: 16}
+    oldSize: {x: 0.25, y: 0.25}
     newSize: {x: 29, y: 15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -152,4 +152,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponItem
   armaAEntregar: {fileID: 11400000, guid: 7ddc82a48463e8d4c98198058fc9a5a7, type: 2}
-  cantidadMunicion: 5
+  cantidadMunicion: 6
