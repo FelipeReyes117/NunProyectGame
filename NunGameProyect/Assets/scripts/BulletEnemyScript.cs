@@ -46,6 +46,7 @@ public class BulletEnemyScript : MonoBehaviour
                  !collision.CompareTag("Bullet") &&
                  !collision.CompareTag("Gun") &&
                  !collision.CompareTag("heard") &&
+                 !collision.CompareTag("Items") &&
                  !collision.CompareTag("CameraBounds"))
         {
             Destroy(gameObject);
