@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7653349498137219061
+--- !u!1 &5009782872355721994
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1948990886214038741}
-  - component: {fileID: 6406709998006994307}
-  - component: {fileID: 8140004544290995606}
-  - component: {fileID: 8492006171378266939}
-  - component: {fileID: 7713532188934891186}
-  - component: {fileID: 7059653731984159463}
+  - component: {fileID: 2315302222296027094}
+  - component: {fileID: 6649012732474490971}
+  - component: {fileID: 496723398808131193}
+  - component: {fileID: 5039970297673965941}
+  - component: {fileID: 4908329867339650150}
+  - component: {fileID: 1014133568111988325}
+  - component: {fileID: 4723021261336571363}
   m_Layer: 0
-  m_Name: Red_Little_Slime
+  m_Name: BugEnemyPrefab
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1948990886214038741
+--- !u!4 &2315302222296027094
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7653349498137219061}
+  m_GameObject: {fileID: 5009782872355721994}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.66, y: -5.96, z: 0}
-  m_LocalScale: {x: 0.5612, y: 0.5612, z: 0.5612}
+  m_LocalRotation: {x: -0, y: -0.0018700091, z: -0, w: 0.99999833}
+  m_LocalPosition: {x: 8.67, y: 1.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4672737068081574422}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6406709998006994307
+  m_LocalEulerAnglesHint: {x: 0, y: -0.214, z: 0}
+--- !u!212 &6649012732474490971
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7653349498137219061}
+  m_GameObject: {fileID: 5009782872355721994}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -85,31 +87,31 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4816725795396207319, guid: 423400db845734b48abaa1b6928991ed, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -9205694716787213018, guid: 776d7a6e79ff8bc109065c3a820540b3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.75, y: 0.4375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &8140004544290995606
+--- !u!50 &496723398808131193
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7653349498137219061}
+  m_GameObject: {fileID: 5009782872355721994}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 15
-  m_LinearDamping: 4.81
-  m_AngularDamping: 6.68
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -122,13 +124,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &8492006171378266939
+--- !u!61 &5039970297673965941
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7653349498137219061}
+  m_GameObject: {fileID: 5009782872355721994}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -156,29 +158,29 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.014218569, y: 0.021327734}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 3, y: 1.75}
+    newSize: {x: 0.75, y: 0.4375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.67771435, y: 0.6350589}
+  m_Size: {x: 2, y: 1}
   m_EdgeRadius: 0
---- !u!95 &7713532188934891186
+--- !u!95 &4908329867339650150
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7653349498137219061}
+  m_GameObject: {fileID: 5009782872355721994}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c39a76f4cfc3adb4dad5c01220737beb, type: 2}
+  m_Controller: {fileID: 9100000, guid: c6a8ef025e750d84f97a08559c840ad5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -190,35 +192,77 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7059653731984159463
+--- !u!114 &1014133568111988325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7653349498137219061}
+  m_GameObject: {fileID: 5009782872355721994}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 748b3a940c457d3478ebbf2661a5cb70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  enemyType: 0
+  enemyType: 1
   preferredDistance: 4
   distanceTolerance: 0.5
-  detectionRadius: 50
+  detectionRadius: 7
   Speed: 2
-  health: 1
-  knockbackForce: 50
+  health: 3
+  knockbackForce: 19
   drops:
-  - nombre: Curacion
-    prefab: {fileID: 2606669791423484085, guid: 5b3ff949b1c8647469ad89c693705d40, type: 3}
-    chance: 18
-  - nombre: Arma roja
-    prefab: {fileID: 1360984394190949110, guid: 80ee81de641041b4b826de28e2704748, type: 3}
-    chance: 11.3
-  - nombre: biblia
-    prefab: {fileID: 3271211389191823237, guid: c22d05d22863c474a904de4c4790f65d, type: 3}
-    chance: 4.4
+  - nombre: 
+    prefab: {fileID: 0}
+    chance: 33
   spawnParticle: {fileID: 1910609779370373796, guid: 5f517dfd95f6109bbb228cd3d6b01f1a, type: 3}
   hitParticle: {fileID: 1428684042761380976, guid: c2e60c2d7022edde6ab1d4d05acc58d1, type: 3}
   deathParticle: {fileID: 1836727825205733476, guid: 4e12dfc0ce0c9eb9ebc0cdfbea0b98f1, type: 3}
+--- !u!114 &4723021261336571363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009782872355721994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f843317463f13676b523cb9b2e0a0cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RangedAttack
+  attackRange: 15
+  attackCooldown: 1.5
+  projectilePrefab: {fileID: 7315931486378317397, guid: 9138575cf539bc45ca937e3e075846d7, type: 3}
+  projectileSpeed: 5
+  firePoint: {fileID: 4672737068081574422}
+--- !u!1 &6734616881859672562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4672737068081574422}
+  m_Layer: 0
+  m_Name: FirePointEnemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4672737068081574422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734616881859672562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.36, y: -0.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2315302222296027094}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

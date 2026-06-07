@@ -7,7 +7,7 @@ public class BulletScript : MonoBehaviour
     public int damage = 1;
 
     [Header("Partículas")]
-    public GameObject hitEffect; // ✅ arrastra el prefab aquí
+    public GameObject hitEffect; 
 
     void Start()
     {
@@ -40,9 +40,10 @@ public class BulletScript : MonoBehaviour
                  !collision.CompareTag("Bullet") &&
                  !collision.CompareTag("Gun") &&
                  !collision.CompareTag("heard") &&
+                 !collision.CompareTag("Items") &&
                  !collision.CompareTag("CameraBounds"))
         {
-            SpawnHitEffect(); // ✅ también al chocar con muros
+            SpawnHitEffect(); 
             Destroy(gameObject);
         }
     }

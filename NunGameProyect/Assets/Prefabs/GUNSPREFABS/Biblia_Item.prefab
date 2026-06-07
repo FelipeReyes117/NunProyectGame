@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4903941641618099643}
   m_Layer: 0
   m_Name: Biblia_Item
-  m_TagString: Untagged
+  m_TagString: Items
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponItem
   armaAEntregar: {fileID: 11400000, guid: 81ba9c76bf3197844adc46b80917e155, type: 2}
-  cantidadMunicion: 3
+  cantidadMunicion: 4
 --- !u!61 &4903941641618099643
 BoxCollider2D:
   m_ObjectHideFlags: 0
