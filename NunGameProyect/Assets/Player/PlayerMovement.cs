@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
     private Animator PlayerAnimator;
+    private myControls controls;
     // ─────────────────────────────────────────────────────────────
 
     [Header("Daño recibido")]
@@ -29,9 +30,26 @@ public class PlayerMovement : MonoBehaviour
     private GameObject activeShieldEffect;
     // ─────────────────────────────────────────────────────────────
 
+    void Awake()
+    {
+        controls = new myControls();
+    }
+
+    void OnEnable()
+    {
+        controls.Player.Enable();
+        controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+        controls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
+    }
+
+    void OnDisable()
+    {
+        controls.Player.Disable();
+    }
+
     void Start()
     {
-        speed = baseSpeed; //  inicializa la velocidad base
+        speed = baseSpeed;
         playerRb = GetComponent<Rigidbody2D>();
         PlayerAnimator = GetComponent<Animator>();
     }
@@ -48,13 +66,6 @@ public class PlayerMovement : MonoBehaviour
             }
             return;
         }
-
-        moveInput = Keyboard.current != null
-            ? new Vector2(
-                (Keyboard.current.dKey.isPressed ? 1 : 0) - (Keyboard.current.aKey.isPressed ? 1 : 0),
-                (Keyboard.current.wKey.isPressed ? 1 : 0) - (Keyboard.current.sKey.isPressed ? 1 : 0)
-              ).normalized
-            : Vector2.zero;
 
         PlayerAnimator.SetFloat("Horizontal", moveInput.x);
         PlayerAnimator.SetFloat("Vertical", moveInput.y);
@@ -74,7 +85,6 @@ public class PlayerMovement : MonoBehaviour
     // ── Daño y Knockback ──────────────────────────────────────────
     public void TakeDamage(int damage, Vector2 knockbackForce)
     {
-        //  Escudo absorbe el golpe
         if (hasShield)
         {
             hasShield = false;
@@ -94,27 +104,26 @@ public class PlayerMovement : MonoBehaviour
     // ── Speed Boost ───────────────────────────────────────────────
     public void ApplySpeedBoost(float multiplier, float duration, GameObject particlePrefab)
     {
-        if (hasSpeedBoost) return; // evita stackear el buff
+        if (hasSpeedBoost) return;
         StartCoroutine(SpeedBoostCoroutine(multiplier, duration, particlePrefab));
     }
 
     private IEnumerator SpeedBoostCoroutine(float multiplier, float duration, GameObject particlePrefab)
     {
         hasSpeedBoost = true;
-        speed = baseSpeed * multiplier; //  aumenta velocidad
+        speed = baseSpeed * multiplier;
 
-        //  Instancia partículas como hijo del player
         if (particlePrefab != null)
             activeSpeedParticle = Instantiate(
                 particlePrefab,
                 transform.position,
                 Quaternion.identity,
-                transform  // ← hijo del player, lo sigue
+                transform
             );
 
         yield return new WaitForSeconds(duration);
 
-        speed = baseSpeed; //  restaura velocidad base
+        speed = baseSpeed;
         hasSpeedBoost = false;
 
         if (activeSpeedParticle != null)
@@ -124,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
     // ── Escudo ────────────────────────────────────────────────────
     public void ApplyShield(GameObject shieldPrefab)
     {
-        if (hasShield) return; // ya tiene escudo
+        if (hasShield) return;
         hasShield = true;
 
         if (shieldPrefab != null)
@@ -132,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
                 shieldPrefab,
                 transform.position,
                 Quaternion.identity,
-                transform  // ← hijo del player, lo sigue
+                transform
             );
     }
 }
