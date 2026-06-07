@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7952628923246843476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2764131746940171791, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: duration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2764131746940171791, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: particleEffect
+      value: 
+      objectReference: {fileID: 529633181257296662, guid: 98256ee0c2a6d357fba9a7692b393b70, type: 3}
+    - target: {fileID: 5169764142390862888, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1351586516, guid: b7703716598992a4da6e3a38c2aff65f, type: 3}
+    - target: {fileID: 8084895688698950314, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_Name
+      value: ShieldPocion Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.151206
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.253961
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102365743124319949, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2764131746940171791, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8084895688698950314, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6635508407565639969}
+  m_SourcePrefab: {fileID: 100100000, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+--- !u!1 &2192751735219217662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8084895688698950314, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+  m_PrefabInstance: {fileID: 7952628923246843476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6635508407565639969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2192751735219217662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9112eec614e8c916fa08e2b812eddaaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShieldItem
+  shieldEffect: {fileID: 4033886791771046726, guid: c88f7a78e9413d2158c025389609fdbe, type: 3}
