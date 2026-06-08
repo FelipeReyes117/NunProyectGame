@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     // ── Movimiento ────────────────────────────────────────────────
-    private float baseSpeed = 3f;
+    private float baseSpeed = 4f;
     private float speed;
     private Rigidbody2D playerRb;
     private Vector2 moveInput;

@@ -13,6 +13,7 @@ public class PlayerWeapon : MonoBehaviour
     public int municionRestante;
 
     private float nextFireTime = 0f;
+    private bool isFiring = false;
 
     void Start()
     {
@@ -36,14 +37,27 @@ public class PlayerWeapon : MonoBehaviour
             spriteRenderer.sprite = nuevaArma.spriteArmas;
         }
     }
+    
+    //Boton tactil
+    public void OnFireButtonDown()
+    {
+        isFiring = true;
+    }
 
+    public void OnFireButtonUp()
+    {
+        isFiring = false;
+    }
+	
     private void CheckFiring() 
     {
-        if (Mouse.current.leftButton.isPressed && Time.time >= nextFireTime) 
-        {
-            Shoot();
-            nextFireTime = Time.time + armaActual.cadenciaFuego;
-        }
+       bool mousePress = Mouse.current != null && Mouse.current.leftButton.isPressed;
+    
+       if ((mousePress || isFiring) && Time.time >= nextFireTime)
+       {
+           Shoot();
+           nextFireTime = Time.time + armaActual.cadenciaFuego;
+       }
     }
 
     private void Shoot()
