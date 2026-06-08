@@ -30,9 +30,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5009782872355721994}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.0018700091, z: -0, w: 0.99999833}
+  m_LocalRotation: {x: 0, y: -0.0018674781, z: 0, w: 0.9999983}
   m_LocalPosition: {x: 8.67, y: 1.21, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3363, y: 0.3363, z: 0.3363}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4672737068081574422}
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9205694716787213018, guid: 776d7a6e79ff8bc109065c3a820540b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -123,7 +123,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5039970297673965941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -212,8 +212,14 @@ MonoBehaviour:
   health: 3
   knockbackForce: 19
   drops:
-  - nombre: 
-    prefab: {fileID: 0}
+  - nombre: Vida
+    prefab: {fileID: 2606669791423484085, guid: 5b3ff949b1c8647469ad89c693705d40, type: 3}
+    chance: 33
+  - nombre: Velocidad
+    prefab: {fileID: 8084895688698950314, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+    chance: 33
+  - nombre: Metralladora
+    prefab: {fileID: 1824296769542001107, guid: 57d65eb1d461c774a8c4dae6d9333647, type: 3}
     chance: 33
   spawnParticle: {fileID: 1910609779370373796, guid: 5f517dfd95f6109bbb228cd3d6b01f1a, type: 3}
   hitParticle: {fileID: 1428684042761380976, guid: c2e60c2d7022edde6ab1d4d05acc58d1, type: 3}

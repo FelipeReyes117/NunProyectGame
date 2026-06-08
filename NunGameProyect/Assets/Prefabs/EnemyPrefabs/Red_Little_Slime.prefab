@@ -31,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.66, y: -5.96, z: 0}
-  m_LocalScale: {x: 0.5612, y: 0.5612, z: 0.5612}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4816725795396207319, guid: 423400db845734b48abaa1b6928991ed, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -121,7 +121,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8492006171378266939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -212,13 +212,16 @@ MonoBehaviour:
   drops:
   - nombre: Curacion
     prefab: {fileID: 2606669791423484085, guid: 5b3ff949b1c8647469ad89c693705d40, type: 3}
-    chance: 18
+    chance: 45.1
   - nombre: Arma roja
     prefab: {fileID: 1360984394190949110, guid: 80ee81de641041b4b826de28e2704748, type: 3}
-    chance: 11.3
+    chance: 25.8
   - nombre: biblia
     prefab: {fileID: 3271211389191823237, guid: c22d05d22863c474a904de4c4790f65d, type: 3}
     chance: 4.4
+  - nombre: Velocidad
+    prefab: {fileID: 8084895688698950314, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
+    chance: 39.9
   spawnParticle: {fileID: 1910609779370373796, guid: 5f517dfd95f6109bbb228cd3d6b01f1a, type: 3}
   hitParticle: {fileID: 1428684042761380976, guid: c2e60c2d7022edde6ab1d4d05acc58d1, type: 3}
   deathParticle: {fileID: 1836727825205733476, guid: 4e12dfc0ce0c9eb9ebc0cdfbea0b98f1, type: 3}
