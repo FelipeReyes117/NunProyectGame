@@ -135,7 +135,7 @@ MonoBehaviour:
   detectionRadius: 100
   Speed: 1
   health: 6
-  knockbackForce: 50
+  knockbackForce: 20
   drops:
   - nombre: BastonROjo
     prefab: {fileID: 1360984394190949110, guid: 80ee81de641041b4b826de28e2704748, type: 3}

@@ -208,7 +208,7 @@ MonoBehaviour:
   detectionRadius: 50
   Speed: 1
   health: 1
-  knockbackForce: 50
+  knockbackForce: 20
   drops:
   - nombre: Curacion
     prefab: {fileID: 2606669791423484085, guid: 5b3ff949b1c8647469ad89c693705d40, type: 3}
