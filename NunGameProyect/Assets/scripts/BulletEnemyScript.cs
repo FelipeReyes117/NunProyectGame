@@ -14,7 +14,7 @@ public class BulletEnemyScript : MonoBehaviour
         bulletCollider = GetComponent<Collider2D>();
 
         // Ignora colisión con todos los enemigos
-        EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
+        EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
         foreach (EnemyController enemy in enemies)
         {
             Collider2D enemyCollider = enemy.GetComponent<Collider2D>();

@@ -2,25 +2,27 @@ using UnityEngine;
 
 public class HUD : MonoBehaviour
 {
-    public GameObject[] vidas; 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject[] vidas;
 
     public void DesactivarVida(int indice)
     {
-        vidas[indice].SetActive(false); 
+        if (indice >= 0 && indice < vidas.Length)
+            vidas[indice].SetActive(false);
     }
+
     public void ActivarVidas(int indice)
     {
-        vidas[(int)indice].SetActive(true);
+        if (indice >= 0 && indice < vidas.Length)
+            vidas[indice].SetActive(true);
+    }
+
+   
+    public void ActualizarVidas(int vidasActuales)
+    {
+        for (int i = 0; i < vidas.Length; i++)
+        {
+            if (vidas[i] != null)
+                vidas[i].SetActive(i < vidasActuales);
+        }
     }
 }

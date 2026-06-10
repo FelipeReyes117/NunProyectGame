@@ -1,5 +1,6 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,43 +8,78 @@ public class GameManager : MonoBehaviour
     public HUD hud;
     private int vidas = 3;
 
+    public weaponData armaGuardada = null;
+    public int municionGuardada = 0;
+
     void Awake()
     {
-        instance = this; // 👈 Y esto también
-    }
-    void Start()
-    {
-        
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnEnable()
     {
-        
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        hud = FindAnyObjectByType<HUD>();
+        if (hud != null)
+            hud.ActualizarVidas(vidas);
+
+        // ✅ Espera un frame antes de restaurar el arma
+        StartCoroutine(RestaurarArmaDelayed());
+    }
+
+    private IEnumerator RestaurarArmaDelayed()
+    {
+        yield return null; // espera un frame
+
+        PlayerWeapon pw = FindAnyObjectByType<PlayerWeapon>();
+        if (pw != null && armaGuardada != null)
+            pw.EquiparArma(armaGuardada, municionGuardada);
+    }
+
+    public void GuardarArma(weaponData arma, int municion)
+    {
+        armaGuardada = arma;
+        municionGuardada = municion;
     }
 
     public void PerderVidas()
     {
         vidas -= 1;
-
-        if (vidas == 0)
+        if (vidas <= 0)
         {
-            //Reinicio de nivel
+            vidas = 0;
+            armaGuardada = null;
+            municionGuardada = 0;
             SceneManager.LoadScene(1);
         }
-        hud.DesactivarVida(vidas);
-
+        if (hud != null)
+            hud.DesactivarVida(vidas);
     }
 
-    public bool RecuperarVIdas()
+    public bool RecuperarVidas()
     {
-        if (vidas > 3)
-        {
-            return false;
-        }
-        hud.ActivarVidas(vidas);
+        if (vidas >= 3) return false;
         vidas += 1;
+        if (hud != null)
+            hud.ActivarVidas(vidas);
         return true;
-        
     }
 }

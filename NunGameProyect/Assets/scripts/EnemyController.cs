@@ -148,7 +148,15 @@ public class EnemyController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
-            GameManager.instance.PerderVidas();
+       if (other.gameObject.CompareTag("Player"))
+    {
+        PlayerMovement player = other.gameObject.GetComponent<PlayerMovement>();
+        if (player != null)
+        {
+            // Dirección del empuje = desde el enemigo hacia el player
+            Vector2 knockDir = (other.transform.position - transform.position).normalized;
+            player.TakeDamage(1, knockDir * knockbackForce);
+        }
+    }
     }
 }

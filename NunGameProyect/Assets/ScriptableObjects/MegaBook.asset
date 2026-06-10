@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5498d8d13fc1845ae344b99c5c5f9b, type: 3}
+  m_Name: MegaBook
+  m_EditorClassIdentifier: Assembly-CSharp::weaponData
+  nombreArma: SUPER LIBRO
+  spriteArmas: {fileID: -4280038371961274333, guid: b7703716598992a4da6e3a38c2aff65f, type: 3}
+  prefabBala: {fileID: 3125913010704703418, guid: deec5f906b5a17c97a9a18dd9d0c9c0d, type: 3}
+  cadenciaFuego: 0.2
+  numeroDeBalas: 1
+  dispersion: 0
+  esInfinita: 0

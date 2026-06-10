@@ -3,12 +3,10 @@ using UnityEngine;
 public class VIda : MonoBehaviour
 {
     [Header("Ajustes de Despawn")]
-    public float tiempoDeVida = 5f; // Variable cambiante desde el Inspector
+    public float tiempoDeVida = 5f;
 
     void Start()
     {
-        // Esto le dice a Unity: "Destruye este objeto cuando pasen X segundos"
-        // Se programa desde que el objeto nace (Start)
         Destroy(gameObject, tiempoDeVida);
     }
 
@@ -16,11 +14,10 @@ public class VIda : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            bool VidaRecuperada = GameManager.instance.RecuperarVIdas();
-            if (VidaRecuperada)
-            {
+            
+            bool vidaRecuperada = GameManager.instance.RecuperarVidas();
+            if (vidaRecuperada)
                 Destroy(gameObject);
-            }
         }
     }
 }

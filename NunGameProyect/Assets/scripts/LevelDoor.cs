@@ -23,7 +23,7 @@ public class LevelDoor : MonoBehaviour
         col = GetComponent<Collider2D>();
         CerrarPuerta();
 
-        EnemySpawner spawner = FindFirstObjectByType<EnemySpawner>();
+        EnemySpawner spawner = FindAnyObjectByType<EnemySpawner>();
         if (spawner != null)
             spawner.OnTodosEnemigosEliminados += AbrirPuerta;
 
@@ -65,13 +65,18 @@ public class LevelDoor : MonoBehaviour
 
     private IEnumerator TransicionNivel()
     {
-        if (pantallaTransicion != null)
-            pantallaTransicion.SetActive(true);
+        
+    PlayerWeapon pw = FindAnyObjectByType<PlayerWeapon>();
+    if (pw != null)
+        GameManager.instance.GuardarArma(pw.armaActual, pw.municionRestante);
 
-        if (textoNivel != null)
-            textoNivel.text = siguienteEscena.Replace("_", " ");
+    if (pantallaTransicion != null)
+        pantallaTransicion.SetActive(true);
 
-        yield return new WaitForSeconds(duracionTransicion);
-        SceneManager.LoadScene(siguienteEscena);
+    if (textoNivel != null)
+        textoNivel.text = siguienteEscena.Replace("_", " ");
+
+    yield return new WaitForSeconds(duracionTransicion);
+    SceneManager.LoadScene(siguienteEscena);
     }
 }
