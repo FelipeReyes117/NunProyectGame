@@ -45,8 +45,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   swarmerPrefab: {fileID: 7653349498137219061, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
-  bigSwarmerPrefab: {fileID: 8327720886038307842, guid: fb4fc79a77e1d1c8c9c6ce051c324b22, type: 3}
-  swarmerInterval: 3
+  bigSwarmerPrefab: {fileID: 1054922022966388230, guid: 2122ec21d70bd0c43a6bc20a5980eaed, type: 3}
+  rangeEnemyPrefab: {fileID: 5009782872355721994, guid: 38f510b76f4c25a91b613196ce3747b9, type: 3}
+  swarmerInterval: 2
   bigSwarmerInterval: 5
+  rangeEnemyInterval: 6
   spawnDurationPerLevel:
   - 90
+  spawnRangeX: 4
+  spawnRangeY: 3
+  spawnRelativoAlSpawner: 1
+  tiempoSinEnemigos: 3

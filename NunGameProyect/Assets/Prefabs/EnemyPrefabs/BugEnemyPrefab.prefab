@@ -32,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.0018674781, z: 0, w: 0.9999983}
   m_LocalPosition: {x: 8.67, y: 1.21, z: 0}
-  m_LocalScale: {x: 0.3363, y: 0.3363, z: 0.3363}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4672737068081574422}
   m_Father: {fileID: 0}
@@ -214,13 +214,16 @@ MonoBehaviour:
   drops:
   - nombre: Vida
     prefab: {fileID: 2606669791423484085, guid: 5b3ff949b1c8647469ad89c693705d40, type: 3}
-    chance: 33
+    chance: 11.5
   - nombre: Velocidad
     prefab: {fileID: 8084895688698950314, guid: 10c92d36f64e5271fb79b25e3c99c510, type: 3}
-    chance: 33
+    chance: 9.5
   - nombre: Metralladora
     prefab: {fileID: 1824296769542001107, guid: 57d65eb1d461c774a8c4dae6d9333647, type: 3}
-    chance: 33
+    chance: 4.5
+  - nombre: rebotadora
+    prefab: {fileID: 0}
+    chance: 60.3
   spawnParticle: {fileID: 1910609779370373796, guid: 5f517dfd95f6109bbb228cd3d6b01f1a, type: 3}
   hitParticle: {fileID: 1428684042761380976, guid: c2e60c2d7022edde6ab1d4d05acc58d1, type: 3}
   deathParticle: {fileID: 1836727825205733476, guid: 4e12dfc0ce0c9eb9ebc0cdfbea0b98f1, type: 3}

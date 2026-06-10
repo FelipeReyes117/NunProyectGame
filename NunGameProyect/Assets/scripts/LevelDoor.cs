@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
-using TMPro; // ← cambia esto
+using TMPro;
 
 public class LevelDoor : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class LevelDoor : MonoBehaviour
     [Header("Transición")]
     public float duracionTransicion = 2f;
     public GameObject pantallaTransicion;
-    public TextMeshProUGUI textoNivel; // ← cambia esto
+    public TextMeshProUGUI textoNivel;
 
     private bool puertaAbierta = false;
     private SpriteRenderer sr;
@@ -34,18 +34,29 @@ public class LevelDoor : MonoBehaviour
     private void CerrarPuerta()
     {
         puertaAbierta = false;
-        if (sr  != null) sr.enabled  = true;
-        if (col != null) col.enabled = true;
+        if (sr  != null) sr.enabled   = true;
+        if (col != null)
+        {
+            col.enabled   = true;
+            col.isTrigger = false; 
+        }
     }
 
     private void AbrirPuerta()
     {
         puertaAbierta = true;
-        if (sr  != null) sr.enabled  = false;
-        if (col != null) col.enabled = false;
+        if (sr  != null) sr.enabled = false;
+
+        
+        if (col != null)
+        {
+            col.enabled   = true;       
+            col.isTrigger = true;       
+        }
         Debug.Log("Puerta abierta!");
     }
 
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && puertaAbierta)

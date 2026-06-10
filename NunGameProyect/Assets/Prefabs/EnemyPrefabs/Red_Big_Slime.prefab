@@ -30,23 +30,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.838
+      value: 3.97
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.739
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: 1948990886214038741, guid: 1a3eddc29f751ff4498b1e0f0ab08577, type: 3}
       propertyPath: m_LocalPosition.z
@@ -130,24 +130,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   enemyType: 0
-  preferredDistance: 4
+  preferredDistance: 1
   distanceTolerance: 0.5
-  detectionRadius: 50
+  detectionRadius: 100
   Speed: 1
-  health: 4
+  health: 6
   knockbackForce: 50
   drops:
   - nombre: BastonROjo
     prefab: {fileID: 1360984394190949110, guid: 80ee81de641041b4b826de28e2704748, type: 3}
-    chance: 43.2
+    chance: 16.7
   - nombre: Escudo
     prefab: {fileID: 2192751735219217662, guid: a466fe7b14b68f8d19da606e4c97ad94, type: 3}
-    chance: 29.2
+    chance: 11.3
   - nombre: biblia
     prefab: {fileID: 3271211389191823237, guid: c22d05d22863c474a904de4c4790f65d, type: 3}
-    chance: 12.5
+    chance: 6
   - nombre: EyeBook
-    prefab: {fileID: 5020843863542155581, guid: 39d9d014a65ec2814a1d3ffcc91660df, type: 3}
+    prefab: {fileID: 0}
     chance: 53.7
   spawnParticle: {fileID: 1910609779370373796, guid: 5f517dfd95f6109bbb228cd3d6b01f1a, type: 3}
   hitParticle: {fileID: 1428684042761380976, guid: c2e60c2d7022edde6ab1d4d05acc58d1, type: 3}
@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc6ebc580a9d2124a03286f3a27b300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChargeAttack
-  attackRange: 4
+  attackRange: 1
   attackCooldown: 1
-  chargeSpeed: 5
+  chargeSpeed: 2
   chargeDuration: 0.4
   damage: 1
