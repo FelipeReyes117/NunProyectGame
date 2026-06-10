@@ -47,11 +47,17 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator RestaurarArmaDelayed()
     {
-        yield return null; // espera un frame
-
-        PlayerWeapon pw = FindAnyObjectByType<PlayerWeapon>();
-        if (pw != null && armaGuardada != null)
+        yield return null;
+    PlayerWeapon pw = FindAnyObjectByType<PlayerWeapon>();
+    Debug.Log("PlayerWeapon encontrado: " + (pw != null));
+    Debug.Log("armaDefault: " + (pw != null ? pw.armaDefault != null ? pw.armaDefault.name : "null" : "pw es null"));
+    if (pw != null)
+    {
+        if (armaGuardada != null)
             pw.EquiparArma(armaGuardada, municionGuardada);
+        else
+            pw.EquiparArma(pw.armaDefault, 0);
+    }
     }
 
     public void GuardarArma(weaponData arma, int municion)
@@ -65,10 +71,11 @@ public class GameManager : MonoBehaviour
         vidas -= 1;
         if (vidas <= 0)
         {
-            vidas = 0;
+            vidas = 3;
             armaGuardada = null;
             municionGuardada = 0;
             SceneManager.LoadScene(1);
+            return;
         }
         if (hud != null)
             hud.DesactivarVida(vidas);

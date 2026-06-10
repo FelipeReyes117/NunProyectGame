@@ -35,7 +35,10 @@ public class PlayerMovement : MonoBehaviour
     {
         controls = new myControls();
     }
-
+public Vector2 GetMoveDirection()
+{
+    return moveInput;
+}
     void OnEnable()
     {
         controls.Player.Enable();
