@@ -6,6 +6,7 @@ public class PlayerWeapon : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Camera mainCamera; 
     public Transform spawner;
+    private AudioSource audioSource;
 
     [Header("Sistema de Armas")]
     public weaponData armaDefault; 
@@ -20,6 +21,7 @@ public class PlayerWeapon : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         // Empezamos siempre con la pistola infinita
         EquiparArma(armaDefault, 0); 
+        audioSource = GetComponent<AudioSource>(); 
     }
 
     void Update()
@@ -62,6 +64,9 @@ public class PlayerWeapon : MonoBehaviour
 
     private void Shoot()
     {
+    	if (audioSource != null)
+        audioSource.Play();
+        
         float anguloInicial = -(armaActual.dispersion * (armaActual.numeroDeBalas - 1)) / 2f;
 
         for (int i = 0; i < armaActual.numeroDeBalas; i++)

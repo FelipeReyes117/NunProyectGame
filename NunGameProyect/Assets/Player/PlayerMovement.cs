@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Animator PlayerAnimator;
     private myControls controls;
+    private AudioSource footstepAudio;
     // ─────────────────────────────────────────────────────────────
 
     [Header("Daño recibido")]
@@ -49,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+    	footstepAudio = GetComponent<AudioSource>();
         speed = baseSpeed;
         playerRb = GetComponent<Rigidbody2D>();
         PlayerAnimator = GetComponent<Animator>();
@@ -70,6 +72,16 @@ public class PlayerMovement : MonoBehaviour
         PlayerAnimator.SetFloat("Horizontal", moveInput.x);
         PlayerAnimator.SetFloat("Vertical", moveInput.y);
         PlayerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
+        
+         if (moveInput != Vector2.zero)
+    {
+        if (!footstepAudio.isPlaying)
+            footstepAudio.Play();
+    }
+    else
+    {
+        footstepAudio.Stop();
+    }
     }
 
     private void FixedUpdate()

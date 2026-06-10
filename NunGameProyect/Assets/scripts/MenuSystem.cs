@@ -15,9 +15,12 @@ public class MenuSystem : MonoBehaviour
 
     public IEnumerator SceneLoad(int sceneIndex)
     {
+        if (transitionAnimator != null)
+    {
         transitionAnimator.SetTrigger("StartTransition");
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(sceneIndex);
+    }
+    SceneManager.LoadScene(sceneIndex);
     }
 
     public void Jugar()
